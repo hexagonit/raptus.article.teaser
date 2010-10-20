@@ -1,0 +1,31 @@
+Developer Manual
+================
+
+Note: You find a developer manual for raptus.article at 
+`raptus.article.core <http://pypi.python.org/pypi/raptus.article.core>`_.
+Please have look there if you need more information.
+
+Code overview
+=============
+
+Components
+----------
+plone.abovecontentbody:
+
+- raptus.article.teaser.full
+- raptus.article.teaser.right
+- raptus.article.teaser.left
+
+Interfaces
+----------
+file: interfaces.py
+
+- ITeaser - (Handler for teaser thumbing and captioning)
+    - getTeaserURL - method (Returns the url to the teaser image in the specific size.
+      The sizes are taken from the raptus_article properties sheet and are formed by the following name schema:
+      teaser_<size>_(height|width)
+    - getTeaser - method (Returns the html tag of the teaser image in the specific size
+      The sizes are taken from the raptus_article properties sheet and are formed by the following name schema:
+      teaser_<size>_(height|width)
+    - getSize - method (Returns the width and height registered for the specific size)
+    - getCaption - method (Returns the caption for the image)

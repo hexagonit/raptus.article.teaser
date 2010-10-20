@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object>
+
+ <order manager="plone.abovecontentbody" skinname="*">
+  <viewlet name="raptus.article.teaser.full" insert-before="*" />
+  <viewlet name="raptus.article.teaser.right" insert-before="*" />
+  <viewlet name="raptus.article.teaser.left" insert-before="*" />
+ </order>
+
+</object>

@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:article="http://namespaces.zope.org/article"
+    i18n_domain="raptus.article">
+
+    <article:component
+        name="teaser.left"
+        component=".teaser.ComponentLeft"
+        viewlet=".teaser.ViewletLeft"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody" />
+
+    <article:component
+        name="teaser.right"
+        component=".teaser.ComponentRight"
+        viewlet=".teaser.ViewletRight"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody" />
+
+    <article:component
+        name="teaser.full"
+        component=".teaser.ComponentFull"
+        viewlet=".teaser.ViewletFull"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody" />
+
+</configure>
