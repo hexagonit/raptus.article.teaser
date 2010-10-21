@@ -10,16 +10,18 @@ Code overview
 
 Components
 ----------
-plone.abovecontentbody:
 
+plone.abovecontentbody
+``````````````````````
 - raptus.article.teaser.full
 - raptus.article.teaser.right
 - raptus.article.teaser.left
 
 Interfaces
 ----------
-file: interfaces.py
 
+file: interfaces.py
+```````````````````
 - ITeaser - (Handler for teaser thumbing and captioning)
     - getTeaserURL - method (Returns the url to the teaser image in the specific size.
       The sizes are taken from the raptus_article properties sheet and are formed by the following name schema:

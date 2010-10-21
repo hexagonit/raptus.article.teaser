@@ -5,27 +5,22 @@ raptus.article.teaser provides support for adding a teaser image on article.
 
 The following features for raptus.article are provided by this package:
 
+Fields
+------
     * Provides an image field for the articles.
-    * Components:
-        * raptus.article.teaser.full
-        * raptus.article.teaser.right
-        * raptus.article.teaser.left
 
-Dependencies:
+Components
+----------
+    * raptus.article.teaser.full
+    * raptus.article.teaser.right
+    * raptus.article.teaser.left
 
+Dependencies
+------------
     * collective.flowplayer
     * Products.ContentTypeValidator
     * raptus.article.core
     * plone.app.imaging
-
-Plone 3 compatibility
----------------------
-
-This packages requires plone.app.imaging which requires two pins in buildout
-when using Plone 3, which there are:
-
-Products.Archetypes = 1.5.16
-plone.scale = 1.2
 
 Installation
 ============
@@ -59,6 +54,15 @@ include the zcml of raptus.article.teaser either by adding it
 to the zcml list in your buildout or by including it in another package's
 configure.zcml.
 
+Plone 3 compatibility
+---------------------
+
+This packages requires plone.app.imaging which requires two pins in buildout
+when using Plone 3, which there are::
+
+    Products.Archetypes = 1.5.16
+    plone.scale = 1.2
+
 Usage
 =====
 
@@ -71,7 +75,5 @@ be set in the edit form for the components to display.
 Copyright and credits
 =====================
 
-raptus.article is copyrighted by raptus_, and licensed under the GPL. 
+raptus.article is copyrighted by `Raptus AG <http://raptus.com>`_ and licensed under the GPL. 
 See LICENSE.txt for details.
-
-.. _raptus: http://raptus.com/ 
