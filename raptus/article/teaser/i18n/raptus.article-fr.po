@@ -38,4 +38,4 @@ msgstr "Image d'article sur toute la largeur."
 
 #: raptus.article.teaser/raptus/article/teaser/browser/teaser.py:70
 msgid "Image right"
-msgstr "Image à droit"
+msgstr "Image à droite"
