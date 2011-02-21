@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="raptus.article">
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      name="blob-article-teaser-migration"
+      class=".migrations.ArticleTeaserMigrationView"
+      permission="cmf.ManagePortal" />
+
+</configure>
