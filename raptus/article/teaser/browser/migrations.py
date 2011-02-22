@@ -22,15 +22,12 @@ class ArticleTeaserToBlobImageMigrator(ATImageToBlobImageMigrator):
     dst_portal_type = 'Article'
     dst_meta_type = 'Article'
 
-
-
-    fields_map = {'image':None}
-
     def migrate_data(self):
         annotations = IAnnotations(self.old)
         img = annotations.get('Archetypes.storage.AnnotationStorage-image', None)
         if img:
             self.new.Schema()['image'].set(self.new, img)
+            del annotations['Archetypes.storage.AnnotationStorage-image']
 
     def createNew(self):
         self.new = self.old

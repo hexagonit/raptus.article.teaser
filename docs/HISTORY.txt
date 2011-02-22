@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.0b8 (2011-02-22)
+------------------
+
+* add blob storage migration @@blob-article-teaser-migration
+
 2.0b7 (2010-12-07)
 ------------------
 

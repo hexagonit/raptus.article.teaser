@@ -1,9 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:article="http://namespaces.zope.org/article"
     i18n_domain="raptus.article">
 
-    <include package="." file="migrations.zcml"/>
+    <include package="." file="migrations.zcml" zcml:condition="installed plone.app.blob" />
 
     <article:component
         name="teaser.left"
